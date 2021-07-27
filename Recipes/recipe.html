@@ -14,6 +14,10 @@
 
     <link rel="stylesheet" href="./recipe.css" />
     <link rel="stylesheet" href="./recipe-bootstrap.css" />
+    <link rel="stylesheet" href="../general.css" />
+
+
+    <link rel="stylesheet" href="./navbar.css" />
     <!-- Header Part -->
   
 
@@ -38,12 +42,45 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
   
 
+    <!---JAVASCRIPT FOLDERS-->
+    <script type="text/javascript" src="./cycle2.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./declerativeToggle.js"></script>
 
-
+ <!----------------------------------NAVBAR BEGINNING--------------------------------------->
 </head>
 <body>
 
-    <!----------------------------------NAVBAR BEGINNING--------------------------------------->
+  <header class="section">
+			
+    <!-- container -->
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <img src="https://cdn.discordapp.com/attachments/865512073681305651/869506277481533440/16.png" alt="logo" class="d-inline-block align-top logo"/>
+      COOKBOOK
+      </a>
+      <span data-toggle-target=".site-nav" class="toggle-btn"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#423e3a" class="bi bi-card-list" viewBox="0 0 16 16">
+        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+        <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+      </svg></span> 
+      <nav class="site-nav">
+        <ul class="group">
+          <li><a href="https://sarahliess.github.io/cookbook-on-the-go/">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">RECIPES</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  
+    <div class="title">
+      <h1 class="catTitle">YUMMY CUPCAKES</h1>
+      <!-- <p class="catSlogan">REAL RECIPES, FOR REAL PEOPLE, REAL FAST</p> -->
+    </div>
+      
+  </header>
+
+  <!------------ NAVBAR ENDING ---------------- -->
    
 <!------------ Recipes section start ---------------- -->
 
@@ -51,11 +88,11 @@
    <main>
 
     <!---------------------- Title of recipe----------- -->
-    <section id="title-of-recipe">
+    <!-- <section id="title-of-recipe">
         <div class="title-div">  
         <h2 class="title"> YUMMY CUPCAKES </h2>
      </div>
-    </section>
+    </section> -->
 
 
 
@@ -68,13 +105,13 @@
        width="100%" height="700px">
     
    <div class="middle"> 
-    <div class="time">   <img src="./Recipe-Images/clock.png"  height="40px" width="40px"> <p>20min</p> 
+    <div class="time">   <img src="../img/clock.png"  height="40px" width="40px"> <p>20min</p> 
        </div>
   
 
-  <div class="calo"> <img src="./Recipe-Images/kcal.png"  height="40px" width="40px"> <p>200</p>
+  <div class="calo"> <img src="../img/kcal.png"  height="40px" width="40px"> <p>200</p>
   </div>
-  <div class="people"> <img src="./Recipe-Images/people.png"  height="40px" width="40px"> <p>4</p>
+  <div class="people"> <img src="../img/people.png"  height="40px" width="40px"> <p>4</p>
   </div>
   
 
@@ -119,7 +156,7 @@
         <table class="table table-striped" style="width: 30%">
         <thead>
             <tr>
-              <th scope="col" ><img  class="cart-img"   src="Recipe-Images/shopping-img.png" > </th>
+              <th scope="col" ><img  class="cart-img"   src="../img/shopping-img.png" > </th>
               <th scope="col" >Amount      </th>
               <th scope="col" >Ingredients        </th>
               
@@ -293,7 +330,7 @@
 
    <div class="back-button">  
 
-   <button >BACK TO HOME</button>
+   <a href="https://sarahliess.github.io/cookbook-on-the-go/">  <button >BACK TO HOME</button></a>
 
   </div>
 </main>
