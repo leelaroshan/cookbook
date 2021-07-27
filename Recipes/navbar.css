@@ -126,7 +126,7 @@
 .site-nav a:hover {
 	background-color: transparent;
 	color: #432e43;
-    margin: 1% 1%;
+/*     margin: 1% 1%; */
 }
 
 @media screen and (max-width: 1023px){
